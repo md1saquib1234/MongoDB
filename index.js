@@ -25,13 +25,39 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-User.findByIdAndUpdate('69a018cb92c92b1b22da24a3' , {age: 26}, {new: true})
-.then((res) => {
+User.findOneAndDelete({name:"Peter"}).then((res) => {
   console.log(res);
-})
-.catch((err) => {
-  console.log(err);
 });
+
+// User.findByIdAndDelete('69a018cb92c92b1b22da24a1').then((res) => {
+//   console.log(res);
+// });
+
+// User.deleteMany({age: 45}).then((res) => {
+//   console.log(res);
+// });
+
+// User.deleteOne({name: "Bruce"}).then((res) => {
+//   console.log(res);
+// });
+
+// User.findOneAndUpdate({name: "Tony"}, {age: 60}, {new: true}).then(
+//   (data) => {
+//     console.log(data);
+//   }
+// );
+
+// User.updateMany({age: {$gt: 45} }, {age: 45}).then((res) => {
+//   console.log(res);
+// });
+
+// User.findByIdAndUpdate('69a018cb92c92b1b22da24a3' , {age: 26}, {new: true})
+// .then((res) => {
+//   console.log(res);
+// })
+// .catch((err) => {
+//   console.log(err);
+// });
 
 // User.findById({_id: "69a018cb92c92b1b22da24a1"}).then((res) => {
 //   console.log(res);
