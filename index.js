@@ -26,19 +26,19 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model("User", userSchema);
 
 
-const user2 = new User({
-  name: "Eve",
-  email: "eve@yahoo.in",
-  age: 48,
-});
+// const user2 = new User({
+//   name: "Eve",
+//   email: "eve@yahoo.in",
+//   age: 48,
+// });
 
- user2
- .save()
- .then((res) => {
-  console.log(err); 
- })
- .catch((err) => {
-  console.log(err);
- })
+//  user2
+//  .save()
+//  .then((res) => {
+//   console.log(err); 
+//  })
+//  .catch((err) => {
+//   console.log(err);
+//  })
 
- module.exports = user2;
+ module.exports = User;
