@@ -15,3 +15,9 @@ body {
   padding: 5px 15px;
   border-radius: 15px;
 }
+
+.edit {
+  
+  background-color: aqua;
+  border-radius: 15px;
+}
