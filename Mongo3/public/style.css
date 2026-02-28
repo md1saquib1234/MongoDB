@@ -21,3 +21,8 @@ body {
   background-color: aqua;
   border-radius: 15px;
 }
+
+.del {
+  background-color: seagreen;
+  border-radius: 15px;
+}
